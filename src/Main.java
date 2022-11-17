@@ -47,7 +47,7 @@ public class Main {
 
         }
         catch (SQLException e) {
-            JOptionPane.showMessageDialog (null, "Все сломалось", "Title", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog (null, "Connection error!", "Title", JOptionPane.ERROR_MESSAGE);
             throw new RuntimeException(e);
 
         } catch (InterruptedException e) {
