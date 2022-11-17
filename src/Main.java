@@ -45,8 +45,9 @@ public class Main {
             JLabel label = new JLabel();
             frame2.add(label);
 
-        } catch (SQLException e) {
-            JOptionPane.showMessageDialog (null, "Something went Wrong", "Title", JOptionPane.ERROR_MESSAGE);
+        }
+        catch (SQLException e) {
+            JOptionPane.showMessageDialog (null, "Все сломалось", "Title", JOptionPane.ERROR_MESSAGE);
             throw new RuntimeException(e);
 
         } catch (InterruptedException e) {
